@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 14px Helvetica, sans-serif;
+    font-weight: 700;
+    background: #fff
+}
+
+ul.line {
+    width: 290px;
+    height: 30px;
+    /* line-height: 55px; */
+    /* background-color: #f8f8f8; */
+    overflow: hidden;
+    /* margin-bottom: 20px; */
+    /* border: 2px solid #363636; */
+     margin-top: 20px;
+     margin-left: 10px;
+    
+}
+
+ul.line li {
+    height: 30px;
+    text-indent: 10px;
+    font-size: 12px;
+    line-height: 30px;
+    list-style: none
+}

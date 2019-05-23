@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="loginBox">
+        <div class="loginMiddle">
+            <div class="loginLogo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+            <div class="loginArea">
+                <div class="loginLeft"><img src="img/login_mian.png" alt=""></div>
+                <div class="loginLeft active">
+                    <div class="loginRight">
+                        <div class="loginIn">
+                            <form action="">
+                                <h4>会员登录</h4>
+                                <div class="keyDown"><span><img src="img/user.png" alt=""></span><input id="userName"
+                                        type="text" placeholder="邮箱/用户名/已验证手机">
+                                      
+                                    </div>
+                                    <span class="hidCotent"></span>
+                                <div class="keyDown"><span><img src="img/mima.png" alt=""></span><input type="text"
+                                        placeholder="有效的验证码" id="userPassword"></div>
+                                        <span class="hidCotent"></span>
+                                <div class="password">
+                                    <input type="checkbox" id="autoLogin">
+                                    <span>自动登录</span><a href=""><b>忘记登录密码？</b></a></div>
+                                <button class="sure"><a href="">确认登录</a></button>
+                                <div class="loginType">
+                                    <p>使用合作网站账号登录维纳斯鲜花礼品网</p>
+                                    <img src="img/wechat.jpg" alt="">
+                                    <img src="img/sina.jpg" alt="">
+                                    <img src="img/alipay.jpg" alt="">
+
+                                </div>
+
+                            </form>
+                            <button class="free"><a href="regis.html">免费注册>></a></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $(".sure").on("click", function () {
+
+            var myreg = /^13\d{9}$/;
+
+            var myreg2 = /^\w+@[a-z0-9]+\.[a-z]{2,4}$/;
+
+            // 用户名验证码都为空
+            if ($("#userName").val() == "" && $("#userPassword").val() == "") {
+                $(".hidCotent").html("请输入用户名")
+                $(".hidCotent1").html("请输入验证码")
+                // alert("请输入用户名和验证码");
+            }
+            // 用户名为空 验证码不为空
+            if ($("#userName").val() == "" && $("#userPassword").val() !== "") {
+                alert("请输入用户名");
+            }
+            // 用户名不为空  验证码为空
+            if ($("#userName").val() !== "" && $("#userPassword").val() == "") {
+                alert("请输入用户验证码");
+            }
+            // 用户名不正确
+            if (!myreg2.test($("#userName").val()) && !myreg.test($("#userName").val())) {
+                alert("请输入正确的用户名");
+            }
+            // 用户名都正确 验证码不为空
+            if (myreg2.test($("#userName").val()) || myreg.test($("#userName").val()) && $("#userPassword")
+                .val() !== "") {
+                alert("登录成功");
+            }
+        })
+        // $(".sure").on("click", function () {
+
+        //     var myreg2 = /^\w+@[a-z0-9]+\.[a-z]{2,4}$/;
+        //     if ($("#userName").val() == "" && $("#userPassword").val() == "") {
+        //         alert("请输入用户名和密码");
+        //     } else {
+        //         if ($("#userName").val() == "" && $("#userPassword").val() !== "") {
+        //             alert("请输入用户名");
+        //         } else {
+        //             if ($("#userName").val() !== "" && $("#userPassword").val() == "") {
+        //                 alert("请输入用户密码");
+        //             } else {
+        //                 if (!myreg2.test($("#userName").val()) && $("#userPassword").val() !== "") {
+        //                     alert("请输入正确的用户名");
+        //                 } else {
+        //                     if (myreg2.test($("#userName").val()) && $("#userPassword").val() == "") {
+        //                         alert("请输入用户密码");
+        //                     } else {
+        //                         if (myreg2.test($("#userName").val()) && $("#userPassword").val() !== "") {
+        //                             alert("登录成功");
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // })
+    </script>
+</body>
+
+</html>

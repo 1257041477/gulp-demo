@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.loginBox{
+    width: 100%;
+    height: 665px;
+    background: #f3f3f3;
+}
+.loginMiddle{
+    width: 1200px;
+    height: 665px;
+    /* background: red; */
+    margin: 0 auto;
+}
+.loginLogo{
+    width: 1200px;
+    height: 150px;
+    /* background: blue; */
+    overflow: hidden;
+}
+.loginArea{
+    width: 1200px;
+    height: 515px;
+    /* background: yellow; */
+}
+.loginLogo img{
+    margin: 40px 10px;
+}
+.loginLeft img{
+    margin: 40px 20px;
+}
+.loginLeft.active img{
+    margin: 10px 5px;
+}
+.loginArea .loginLeft{
+    width: 600px;
+    height: 515px;
+    float: left;
+    /* background: pink; */
+    /* border: 1px solid #000; */
+}
+.loginRight{
+    width: 380px;
+    /* height: 360px; */
+    background: #fff;
+     /* border: 1px solid #000; */
+     margin: 50px auto;
+     overflow: hidden;
+     
+}
+.loginLeft.active{
+    position: relative;
+}
+.loginIn{
+    width:320px;
+    height: 340px;
+    padding: 10px 30px;
+   
+    /* background: blue; */
+}
+.hidCotent{
+    width: 320px;
+    color: #d9544f;
+}
+.hidCotent1{
+    width: 320px;
+    color: #d9544f;
+}
+.keyDown{
+    width: 300px;
+    height: 33px;
+    border: 1px solid #000;
+    margin: 15px 0;
+}
+.keyDown input{
+    width:255px;
+    height: 33px; 
+    float: right;
+    border: none;
+    text-indent: 1em;
+    /* margin-top: -50px; */
+}
+.keyDown span{
+    display: inline-block;
+    width: 45px;
+    height: 33px;
+    text-align: center;
+    float: left;
+    color: #000;
+    background: #e9ebea;
+    font-size: 14px;
+}
+.keyDown  img{
+    vertical-align: middle;
+    /* margin: 0 10px; */
+}
+.password{
+    width: 300px;
+    height: 33px;
+    line-height: 33px;
+}
+.password  b{
+    font-weight: normal;
+    font-size: 14px;
+    color:#3d8ad0;
+}
+.password span{
+    font-size: 14px;
+}
+.password a{
+    float: right;
+text-decoration: none;
+}
+.sure{
+    width: 300px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    background:#d9544f; 
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+   
+}
+.sure a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.loginType{
+    width: 300px;
+    /* height: 33px; */
+    /* margin-top: 55px; */
+}
+.loginType img{
+    width: 33px;
+    height: 33px;
+    /* display: block; */
+}
+.loginType p{
+    font-size: 14px;
+    
+}
+.free{
+    width:115px;
+    height: 32px;
+    background: #7bbe55; 
+   position: absolute;
+   bottom: 70px;
+   right:107px;
+   border-radius: 5px;
+   border: none;
+
+}
+.free a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}

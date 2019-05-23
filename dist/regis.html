@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册界面</title>
+    <link rel="stylesheet" href="css/regis.css">
+    <link rel="stylesheet" href="css/text.css">
+</head>
+
+<body>
+    <header class="top">
+        <nav class="nav1">
+            <div class="left">
+                欢迎来到维纳斯鲜花礼品网，请
+                <a href="login.html">登录</a>
+                或
+                <a href="regis.html">注册</a>
+            </div>
+            <ul class="right">
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+                <li>
+                    <s></s>
+                    <a href="javascript:;">客户服务
+                        <span class="xiao"></span>
+                        <ul class="dropaty">
+                            <li>
+                                <a href="javascript:;">帮助中心</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">售后服务</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">在线客服</a>
+                            </li>
+
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <s></s>
+                    <i></i>
+                    <a href="javascript:;">收藏本站</a>
+                </li>
+                <li>
+                    <s></s>
+                    <i></i>
+                    <a href="javascript:;">购物车</a>
+
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <article class="layourt">
+        <div class="header">
+            <h1>
+                <a href="index.html" title="维也纳鲜花礼品网">
+                    <img src="img/logo.png" alt="维也纳鲜花礼品网">
+                </a>
+                <span class="titlle">欢迎新用户注册</span>
+            </h1>
+        </div>
+        <div class="biankuan">
+            <div class="lefttt">
+                <form method="post" name="form1">
+                    <div class="from-group">
+                        <label class="col-sms contro-lable">
+                            <b class="red">*</b>
+                            账户名：
+                        </label>
+                        <div class="col-sm8">
+                            <input class="form-control n-invalid" type="text" placeholder="手机号/Eamil" class="a1" required
+                            id="username"
+                            >
+                         
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="from-group">
+                        <label class="col-sms contro-lable">
+                            <b class="red">*</b>
+                            设置密码：
+                        </label>
+                        <div class="col-sm8">
+                            <input class="form-control n-invalid" type="password" placeholder="密码" required class="a1" id="password">
+                           
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div class="from-group">
+                        <label class="col-sms contro-lable">
+                            <b class="red">*</b>
+                            确认密码：
+                        </label>
+                        <div class="col-sm8">
+                            <input class="form-control n-invalid" type="password" required class="a1" placeholder="确认密码" id="passwords">
+                         
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div class="from-group">
+                        <label class="col-sms contro-lable">
+
+                        </label>
+                        <div class="col-sm8 checkbox">
+                            <label><input type="checkbox" checked="checked" required> 我已阅读并同意<a href="#"
+                                    class="blue">《维纳斯鲜花礼品网用户注册协议》</a></label>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+
+                    <div class="from-group">
+                        <label class="col-sms contro-lable">
+
+                        </label>
+                        <div class="col-sm8">
+                            <button type="submit" class="btn btn-danger btn-sm w180" id="send">立即注册</button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+
+
+                </form>
+            </div>
+            <div class="right2">
+                <div class="login">
+                    <p>已有维纳斯鲜花礼品网帐号</p>
+                    <a href="login.html" class="btn btn-warning btn-sm w180">登录</a>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+
+        </div>
+
+
+
+    </article>
+    <script src="js/jquery.js"></script>
+    <script>
+     
+        $(document).ready(function () {
+            $(".a1").each(function () {
+                var hdw = $("<strong class='reda'>*</strong>");
+                $(this).parent().append(hdw);
+            });
+            $("form :input").blur(function () {
+                $(this).parent().find(".a2").remove();
+                if ($(this).is("#username")) {
+                    if (this.value == "" || this.value.length < 6) {
+                        var hdw1 = $("<span class='a2 error'>用户名不得小于6位</span>");
+                        $(this).parent().append(hdw1);
+                    } else {
+                        var hdw1 = $("<span class='a2 righta'>正确</span>");
+                        $(this).parent().append(hdw1);
+                    }
+                }
+                if ($(this).is("#password")) {
+                    if (this.value == "") {
+                        var hdw1 = $("<span class='a2 error'>密码不得为空</span>");
+                        $(this).parent().append(hdw1);
+                    } else {
+                        var hdw1 = $("<span class='a2 righta'>正确</span>");
+                        $(this).parent().append(hdw1);
+                    }
+                }
+                if ($(this).is("#passwords")) {
+                    if (this.value == "" || this.value != $("#password").val()) {
+                        var hdw1 = $("<span class='a2 error'>两次密码不一样</span>");
+                        $(this).parent().append(hdw1);
+                    } else {
+                        var hdw1 = $("<span class='a2 righta'>正确</span>");
+                        $(this).parent().append(hdw1);
+                    }
+                }
+            });
+            $("#send").click(function () {
+                $("form :input").trigger("blur");
+                var hdw3 = $(".error").length;
+                if (hdw3) {
+                    return false;
+                }
+                alert("注册成功");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+html,
+body,
+ul,
+li,
+dl,
+dd,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    color: #333;
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', SimSun, 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+/* 头部开始 */
+.logoArea{
+    width: 100%;
+    height: 50px;
+    margin: 20px;
+}
+.page_top {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    line-height: 30px;
+    background: #F7F7F7;
+    color: #666;
+}
+
+.page_top .layout {
+    height: 30px;
+    line-height: 30px;
+    background: #F7F7F7;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+a {
+    /* color: #428bca; */
+    color: #666;
+    text-decoration: none;
+}
+
+.page_top a {
+    margin: 0 5px;
+}
+.tdSum {
+    color: #f40;
+    font-weight: 700;
+}
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.page_top ul li {
+    float: left;
+    padding: 0 8px 0 9px;
+    position: relative;
+}
+
+.page_top ul li s {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 0;
+    height: 12px;
+    border-left: 1px solid #DDD;
+    overflow: hidden;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    /* min-width: 160px; */
+    padding: 5px 0;
+    margin: 2px 0 0;
+    /* font-size: 14px; */
+    text-align: left;
+    /* list-style: none; */
+    background-color: #fff;
+    /* -webkit-background-clip: padding-box; */
+    background-clip: padding-box;
+    /* border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175); */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.page_top .dropdown-menu {
+    min-width: 80px;
+    margin-top: 0;
+    border: 1px solid #DDD;
+    border-radius: 0 0 4px 4px;
+    font-size: 12px;
+}
+
+.page_top .dropdown-menu li {
+    float: none;
+    padding: 0;
+}
+
+.page_top ul li {
+    /* float: left;
+    padding: 0 8px 0 9px; */
+    position: relative;
+}
+
+.page_top .dropdown-menu li a {
+    padding: 3px 10px;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    /* padding: 3px 20px; */
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.globa-header {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.layout {
+    margin: 0 auto;
+    width: 990px;
+    max-width: 990px;
+    height: auto;
+}
+
+.globa-header .header h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.globa-header .cartSetup {
+    float: right;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.globa-header .header h1 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    background: 0 0;
+}
+
+.globa-header .header h1 span.title {
+    margin-left: 5px;
+    padding-left: 10px;
+    border-left: 1px solid #DDD;
+    font-size: 0.6em;
+    font-weight: 700;
+    color: #666;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.cartSetup .cartSetup-2 {
+    background: url(../img/step2.png) no-repeat;
+    width: 481px;
+    overflow: hidden;
+    height: 43px;
+    padding-top: 23px;
+}
+
+.cartSetup ul {
+    /* width: 480px; */
+    float: right;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.cartSetup li.step-1 {
+    color: #7abd54;
+}
+
+.cartSetup li {
+    width: 160px;
+    height: 23px;
+    float: left;
+    /* color: #bce8a3; */
+    line-height: 23px;
+    text-align: center;
+}
+
+.cartSetup .cartSetup-2 .step-2 {
+    color: #7abd54;
+}
+
+.cartSetup li.step-2 {
+    /* color: #aaaaaa; */
+    width: 160px;
+}
+
+.cartSetup li.step-3 {
+    color: #aaaaaa;
+}
+
+/* 购物车区域 */
+.shopArea{
+    width: 100%;
+    /* background: #7abd54; */
+}
+
+/* 底部区域 */
+.bottom {
+    width: 100%;
+    margin-top: 30px;
+    /* background-color: #fff; */
+}
+
+.bottom .footer {
+    color: #999;
+    line-height: 22px;
+    border-top: #d3d3d3 solid 2px;
+}
+
+.bottom-wrap {
+    padding: 10px 0;
+}
+
+.layout {
+    margin: 0 auto;
+    width: 990px;
+    max-width: 990px;
+    height: auto;
+}
+
+.bottom .footer a {
+    color: #999;
+}
+
+.sep {
+    margin: 0 5px;
+    color: #dfdfdf;
+}
+
