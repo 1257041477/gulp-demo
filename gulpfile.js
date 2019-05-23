@@ -7,7 +7,7 @@ var concat=require("gulp-concat");//合并文件
 var sass=require("gulp-sass");//编译sass
 var rename=require("gulp-rename");//文件重命名
 var uglify=require("gulp-uglify");//压缩js
-var base64=require("gulp-base64");//图片转码
+var base64=require("gulp-base64");//图片转码加密
 gulp.task("default",function(){
 	gulp.src("./src/**/*")
 	.pipe(gulp.dest("./dist"));
